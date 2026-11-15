@@ -1,53 +1,64 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>ITEC 305 Resource Indicator</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hello World! | Memphis</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: #101010;
+      color: #fff;
+      font-family: Inter, system-ui, sans-serif;
+    }
+    main {
+      width: min(100% - 2.5rem, 72rem);
+      margin: 0 auto;
+      padding-block: clamp(2rem, 7vw, 5rem) 2rem;
+    }
+    header {
+      border-top: 1px solid #777;
+      padding-top: clamp(1.25rem, 4vw, 2.5rem);
+      margin-bottom: clamp(1.5rem, 4vw, 2.75rem);
+    }
+    h1 {
+      margin: 0;
+      font-size: clamp(2.65rem, 9vw, 7.5rem);
+      letter-spacing: -.065em;
+      line-height: 1.05;
+    }
+    p { margin: .85rem 0 0; color: #ddd; line-height: 1.5; }
+    figure { margin: 0; }
+    img { display: block; width: 100%; height: auto; }
+    figcaption {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: .35rem 1.5rem;
+      padding-block: .85rem;
+      border-bottom: 1px solid #777;
+      font-size: .85rem;
+      line-height: 1.5;
+      color: #ddd;
+    }
+    a { color: inherit; text-underline-offset: .2em; }
+    a:focus-visible { outline: 2px solid #fff; outline-offset: 3px; }
+  </style>
 </head>
 <body>
+  <main>
     <header>
-        <h1>ITEC 305 Resource Indicator</h1>
-        <p>LeMoyne-Owen College</p>
+      <h1>Hello World!</h1>
+      <p>Welcome to my first Azure Storage website.</p>
     </header>
-
-    <main>
-        <section>
-            <h2>Resource Links</h2>
-            <ol>
-                <li><a href="https://learn.microsoft.com/en-us/aspnet/core/?view=aspnetcore-10.0">Microsoft Learn - ASP.NET Core Documentation</a></li>
-                <li><a href="https://experience.elluciancloud.com/loc">Ellucian Colleague - Student Portal</a></li>
-                <li><a href="https://loc.instructure.com/courses/4869/modules">Canvas - ITEC305 - Modules</a></li>
-                <li><a href="https://www.netacad.com/">Cisco Networking Academy</a></li>
-                <li><a href="https://microsoftlearning.github.io/c-sharp-minor/">Microsoft Learn - C# Minor</a></li>
-                <li><a href="https://portal.azure.com/#home">Microsoft Azure Portal</a></li>
-            </ol>
-        </section>
-
-        <section>
-            <h2>Campus Photos</h2>
-
-            <h3>Founders Bell</h3>
-            <img src="images/IMG_3020.png" alt="Founders Bell mounted on a brick pedestal beneath campus trees" width="280">
-
-            <h3>GOH Building</h3>
-            <img src="images/IMG_3019.png" alt="Steps and handrails leading to the GOH Science and Mathematics Learning Center entrance" width="280">
-
-            <h3>Track</h3>
-            <img src="images/IMG_3018.png" alt="Red running track curving around the campus field and fenced courts" width="280">
-
-            <h3>Hollis F. Price</h3>
-            <img src="images/IMG_3016.png" alt="Brick entrance to Hollis F. Price Middle College High School" width="280">
-
-            <h3>Student Center</h3>
-            <img src="images/IMG_3021.png" alt="Glass entrance below the Alma C. Hanson Memorial Student Center sign" width="280">
-        </section>
-    </main>
-
-    <footer>
-        <h2>Accessibility Note</h2>
-        <p>This page uses headings to organize its content, descriptive links that can be reached
-            with the Tab key, and alternative text that identifies each campus photo.</p>
-    </footer>
+    <figure>
+      <img src="picture.jpg" width="1800" height="1080" alt="Downtown Memphis skyline overlooking the Mississippi River in daylight">
+      <figcaption>
+        <strong>Memphis, Tennessee</strong>
+        <span>Photo by <a href="https://commons.wikimedia.org/wiki/File:Memphis,_TN_skyline_along_the_Mississippi_River.jpg">Quintin Soloviev</a> · <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a> · Resized</span>
+      </figcaption>
+    </figure>
+  </main>
 </body>
 </html>
